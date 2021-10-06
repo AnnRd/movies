@@ -7,6 +7,7 @@ body {
 .wrapper {
   min-height: 100%;
   overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -58,19 +59,25 @@ color: cornsilk;
   font-size: 25px;
   color: aqua;
   font-weight: bold;
-  padding: 7px 40px 7px;
+  padding: 9px 40px 9px;
 }
 
 .menu__account {
-  font-size: 25px;
+  font-size: 22px;
   color: aqua;
   
-  padding: 7px 40px 7px;
+  padding: 10px 40px 10px;
 }
 
 .menu__list div:hover {
-  color:burlywood;
+  color: aqua;
   text-decoration: underline;
+  font-size: 16px;
+  transition: all 0.6s ease-out;
+}
+
+.menu__list div:not(:hover) {
+  transition: all 0.6s ease-out;
 }
 
 /* .maincontainer {
@@ -109,6 +116,7 @@ justify-content: center;
 .main__list_two {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 100px;
 }
 
 .main__list_one div img{
@@ -121,6 +129,22 @@ justify-content: center;
 .main__list_one div img:hover {
   max-width: 250px;
   max-height:270px;
+  transition: all 0.7s ease-out;
+}
+
+.main__list_one div img:not(:hover) {
+  transition: all 0.7s ease-out;
+}
+
+
+.main__list_two div img:hover {
+  max-width: 250px;
+  max-height:270px;
+  transition: all 0.7s ease-out;
+}
+
+.main__list_two div img:not(:hover) {
+  transition: all 0.7s ease-out;
 }
 
 .main__list_two div img{
@@ -139,6 +163,4 @@ justify-content: center;
 .subname {
   color: rgb(61, 3, 116);
   font-size: 12px;
-  
 }
-
